@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "2b6056df-b719-4ea6-9f25-fd0013eb56a8",
+		"name": "Web Api Example 01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET api/Values/GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Values/GetAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Values",
+						"GetAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET api/Values/Get?id={id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Values/Get?id=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Values",
+						"Get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE api/Values/Delete?id={id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/Values/Delete?id=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Values",
+						"Delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST api/Values/Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"ABC\",\r\n    \"Name\": \"DEF\",\r\n    \"Password\": \"GHI\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Values/Post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Values",
+						"Post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT api/Values/Put",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"ABC\",\r\n    \"Name\": \"DEF\",\r\n    \"Password\": \"GHI\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Values/Put",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Values",
+						"Put"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
